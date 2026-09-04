@@ -1,0 +1,383 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>TechGuide | InovaTech</title>
+
+    <!-- Fonte -->
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Ícones -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Markdown -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Fundo tecnológico -->
+    <div class="background-effects">
+        <div class="grid"></div>
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+    </div>
+
+
+    <main class="app">
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+
+                <div class="logo-icon">
+                    <i class="fa-solid fa-microchip"></i>
+                </div>
+
+                <div>
+                    <h1>INOVATECH</h1>
+                    <span>ESCOLA DE TECNOLOGIA</span>
+                </div>
+
+            </div>
+
+
+            <!-- Nova Conversa -->
+
+            <button id="newChatBtn"
+                class="new-chat-btn">
+
+                <i class="fa-solid fa-plus"></i>
+
+                Nova Conversa
+
+            </button>
+
+
+            <!-- Informações -->
+
+            <div class="sidebar-info">
+
+                <div class="info-card">
+
+                    <i class="fa-solid fa-comments"></i>
+
+                    <div>
+
+                        <span>Mensagens</span>
+
+                        <strong id="messageCounter">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <i class="fa-solid fa-graduation-cap"></i>
+
+                    <div>
+
+                        <span>Assistente</span>
+
+                        <strong>
+                            TechGuide
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Cursos -->
+
+            <div class="courses">
+
+                <h3>ÁREAS DE TECNOLOGIA</h3>
+
+                <div class="course">
+                    💻 Programação
+                </div>
+
+                <div class="course">
+                    📊 Dados
+                </div>
+
+                <div class="course">
+                    🎨 Design UX
+                </div>
+
+                <div class="course">
+                    🛡️ Cibersegurança
+                </div>
+
+                <div class="course">
+                    ☁️ Cloud Computing
+                </div>
+
+            </div>
+
+
+            <!-- Rodapé Sidebar -->
+
+            <div class="sidebar-footer">
+
+                <span class="status-dot"></span>
+
+                Sistema Online
+
+            </div>
+
+        </aside>
+
+
+        <!-- CHAT -->
+
+        <section class="chat-container">
+
+
+            <!-- HEADER -->
+
+            <header class="chat-header">
+
+                <div class="assistant-info">
+
+                    <div class="avatar">
+
+                        <i class="fa-solid fa-robot"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <h2>
+                            TechGuide
+                        </h2>
+
+                        <span>
+
+                            <span class="online-dot"></span>
+
+                            Mentora Virtual da InovaTech
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Ações -->
+
+                <div class="header-actions">
+
+                    <!-- Tema -->
+
+                    <button id="themeBtn"
+                        class="icon-btn"
+                        title="Alterar tema">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </button>
+
+
+                    <!-- Limpar -->
+
+                    <button id="clearBtn"
+                        class="icon-btn"
+                        title="Limpar conversa">
+
+                        <i class="fa-solid fa-trash"></i>
+
+                    </button>
+
+                </div>
+
+            </header>
+
+
+            <!-- ÁREA DAS MENSAGENS -->
+
+            <div id="chatMessages"
+                class="chat-messages">
+
+
+                <!-- Mensagem inicial -->
+
+                <div class="message assistant-message">
+
+                    <div class="message-avatar">
+
+                        <i class="fa-solid fa-robot"></i>
+
+                    </div>
+
+
+                    <div class="message-content">
+
+                        <div class="message-bubble">
+
+                            <h3>
+                                👋 Saudações!
+                            </h3>
+
+                            <p>
+
+                                Seja muito bem-vindo à
+                                <strong>
+                                    Escola de Tecnologia InovaTech
+                                </strong>.
+
+                            </p>
+
+                            <p>
+
+                                Sou a
+                                <strong>
+                                    TechGuide
+                                </strong>,
+                                sua mentora virtual.
+
+                            </p>
+
+                            <p>
+
+                                Posso auxiliá-lo a conhecer
+                                nossos cursos, compreender
+                                as áreas da tecnologia e
+                                encontrar o caminho mais
+                                adequado aos seus objetivos.
+
+                            </p>
+
+                            <p>
+
+                                💻 Programação<br>
+                                📊 Dados<br>
+                                🎨 Design UX<br>
+                                🛡️ Cibersegurança<br>
+                                ☁️ Cloud Computing
+
+                            </p>
+
+                            <p>
+
+                                <strong>
+                                    Como posso auxiliá-lo
+                                    nesta jornada tecnológica?
+                                </strong>
+
+                            </p>
+
+                        </div>
+
+
+                        <div class="message-footer">
+
+                            <span class="message-time">
+
+                                Agora
+
+                            </span>
+
+
+                            <button class="copy-btn">
+
+                                <i class="fa-regular fa-copy"></i>
+
+                                Copiar
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- ÁREA DE DIGITAÇÃO -->
+
+            <div class="input-area">
+
+                <div class="input-wrapper">
+
+
+                    <textarea
+                        id="messageInput"
+                        placeholder="Digite sua dúvida sobre tecnologia..."
+                        rows="1"></textarea>
+
+
+                    <button id="sendBtn"
+                        class="send-btn"
+                        title="Enviar mensagem">
+
+                        <i class="fa-solid fa-paper-plane"></i>
+
+                    </button>
+
+
+                </div>
+
+
+                <p class="input-info">
+
+                    Pressione
+                    <strong>Enter</strong>
+                    para enviar
+
+                    <span>•</span>
+
+                    Shift + Enter para nova linha
+
+                </p>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```
