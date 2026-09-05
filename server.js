@@ -228,6 +228,18 @@ informe educadamente que essa informação precisa ser confirmada com a equipe r
 
 Sua prioridade é orientar o estudante com segurança, clareza e entusiasmo.
 `;
+// =========================================
+// ROTA DE HEALTH CHECK (para o Render)
+// =========================================
+
+app.get("/health", (req, res) => {
+  res.json({
+    status: "ok",
+    timestamp: new Date().toISOString(),
+    service: "TechGuide API",
+    version: "1.0.0"
+  });
+});
 
 // =========================================
 // ROTA PRINCIPAL
