@@ -273,14 +273,33 @@ app.post(
       // MONTA HISTÓRICO
       // =========================================
 
+      /*
+        const conversation = [
+          {
+            role: "system",
+
+            content: systemPrompt,
+          },
+
+          ...messages,
+        ];
+*/
+      // Pega as últimas N mensagens para evitar estouro de tokens
+      const MAX_HISTORY = 10;
+      const recentMessages = messages && Array.isArray(messages) 
+        ? messages.slice(-MAX_HISTORY) 
+        : [];
+
       const conversation = [
         {
           role: "system",
-
           content: systemPrompt,
         },
-
-        ...messages,
+        ...recentMessages,
+        {
+          role: "user",
+          content: mensagem,
+        },
       ];
 
       // =========================================
