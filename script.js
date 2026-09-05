@@ -2,8 +2,10 @@
 // CONFIGURAÇÕES
 // =========================================
 
-const API_URL = "http://localhost:3000/chat";
+//const API_URL = "http://localhost:3000/chat";
 //const API_URL = "https://turmagpt.services.ai.azure.com/openai/v1";
+const API_URL = 'https://techguide-api.onrender.com/chat';
+
 
 // =========================================
 // ELEMENTOS
